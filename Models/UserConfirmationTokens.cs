@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace IdentityX.Models
 {
     public class UserConfirmationTokens
     {
+        [Key]
         public long TokenId { get; set; }
         public string TokenValue { get; set; }
         public string TokenType { get; set; }

@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace IdentityX.Models
 {
     public class UserProfileSettings
     {
+        [Key]
         public long SettingsId { get; set; }
         public bool ShowPhoneNumber { get; set; }
         public bool ShowEmail { get; set; }

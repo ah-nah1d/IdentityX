@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace IdentityX.Models
 {
     public class UserSessions
     {
+        [Key]
         public long SessionId { get; set; }
         public string DeviceInfo { get; set; }
         public string IpAddress { get; set; }

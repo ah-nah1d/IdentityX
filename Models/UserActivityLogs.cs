@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace IdentityX.Models
 {
     public class UserActivityLogs
     {
+        [Key]
         public long LogId { get; set; }
         public long UserId { get; set; }
         public string Action { get; set; }

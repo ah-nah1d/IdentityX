@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace IdentityX.Models
 {
     public class BackupCodes
     {
+        [Key]
         public long CodeId { get; set; }
         public string BackupCode { get; set; }
         public DateTime UsedAt { get; set; }
